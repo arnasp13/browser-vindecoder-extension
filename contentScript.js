@@ -1,4 +1,4 @@
-chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
+chrome.runtime.onMessage.addListener(async (message) => {
   if (message.vin) {
     try {
       const response = await axios.get(

@@ -19,7 +19,7 @@
   "content_scripts": [
     {
       "js": ["axios.min.js"],
-      "matches": ["http://*/*", "https://*/*"]
+      "matches": ["https://vpic.nhtsa.dot.gov/*"]
     }
   ]
 }
