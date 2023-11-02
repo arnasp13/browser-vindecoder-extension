@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "VinDecoderFree.com",
-  "version": "1.0",
-  "description": "Decode Vehicle Identification Numbers",
+  "name": "VIN Decoder - Free Instant Vehicle Information",
+  "version": "1.1",
+  "description": "VIN Decoder - Decode any Vehicle Identification Number and reveal detailed vehicle data. Instantly.",
   "permissions": ["contextMenus"],
   "background": {
     "service_worker": "background.js"
