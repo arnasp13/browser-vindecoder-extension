@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "VIN Decoder",
+  "name": "VinDecoderFree.com",
   "version": "1.0",
   "description": "Decode Vehicle Identification Numbers",
   "permissions": ["scripting", "contextMenus", "activeTab", "tabs"],
