@@ -3,7 +3,7 @@
   "name": "VinDecoderFree.com",
   "version": "1.0",
   "description": "Decode Vehicle Identification Numbers",
-  "permissions": ["scripting", "contextMenus", "activeTab", "tabs"],
+  "permissions": ["contextMenus"],
   "background": {
     "service_worker": "background.js"
   },
@@ -16,7 +16,6 @@
   "action": {
     "default_popup": "popup.html"
   },
-  "host_permissions": ["*://*/*"],
   "content_scripts": [
     {
       "js": ["axios.min.js"],
