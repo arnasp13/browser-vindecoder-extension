@@ -18,10 +18,10 @@ To install the VIN Decoder Chrome Extension:
 - **GitHub Repository**: [VIN Decoder Free Repo](https://github.com/arnasp13/vindecoderfree)
 
 ## Contributing 🤝
-We welcome contributions! If you have suggestions, bug reports, or enhancements, please open an issue on our [GitHub repo](https://github.com/arnasp13/vindecoderfree). Our team will review and get back to you as soon as possible.
+We welcome contributions! If you have suggestions, bug reports, or enhancements, please open an issue on our [GitHub repo](https://github.com/arnasp13/browser-vindecoder-extension). Our team will review and get back to you as soon as possible.
 
 ## Feedback & Support 💬
-Your feedback helps us improve! If you have any questions or need support, please reach out through our [official website](https://www.vindecoderfree.com) or [GitHub repo](https://github.com/arnasp13/vindecoderfree).
+Your feedback helps us improve! If you have any questions or need support, please reach out through our [official website](https://www.vindecoderfree.com) or email: arnaspuidokas6 AT gmail dot com.
 
 ## License 📄
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
