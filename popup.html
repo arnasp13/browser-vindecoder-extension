@@ -7,13 +7,25 @@
 </head>
 
 <body>
-    <h3>Enter VIN:</h3>
-    <input type="text" id="vinInput" placeholder="Enter VIN here..." />
-    <button id="submitBtn">Decode</button>
-    <hr />
-    <div id="messageDiv"></div>
+    <header>
+        <h1>Welcome to VinDecoderFree!</h1>
+        <p>
+            Discover the secrets behind any vehicle identification number (VIN).
+        </p>
+    </header>
+    <main>
+        <h3>Enter VIN:</h3>
+        <input type="text" id="vinInput" placeholder="Enter VIN here..." />
+        <button id="submitBtn">Decode</button>
+        <div id="messageDiv"></div>
+        <div id="resultsDiv"></div>
+        <div id="linkDiv" style="margin-top: 10px; margin-bottom: 10px"></div>
+        <!-- Added for the VIN-specific link -->
+    </main>
+    <footer>
+        <p>Powered by VinDecoderFree.com</p>
+    </footer>
 
-    <div id="resultsDiv"></div>
     <script src="axios.min.js"></script>
     <script src="popup.js"></script>
 </body>

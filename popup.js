@@ -31,9 +31,6 @@ document
         `https://vpic.nhtsa.dot.gov/api/vehicles/decodevinextended/${vin}?format=json`
       );
 
-      // If you want to log the response for debugging purposes:
-      console.log(response);
-
       const data = response?.data?.Results;
 
       if (!data || data.length === 0) {
@@ -45,14 +42,35 @@ document
         (result) => !result.Variable.includes("Error") && result.Value
       );
 
-      let resultsHTML = "";
-      filteredResults.forEach((result) => {
-        resultsHTML += `<strong>${result.Variable}:</strong> ${result.Value}<br>`;
+      let resultsHTML = `
+  <table class="vin-results-table">
+    <thead>
+      <tr class="header-row">
+        <th>Attribute</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+`;
+
+      filteredResults.forEach((result, index) => {
+        resultsHTML += `
+    <tr class="${index % 2 === 0 ? "even-row" : "odd-row"}">
+      <td class="attribute-cell">${result.Variable}</td>
+      <td class="value-cell">${result.Value}</td>
+    </tr>
+  `;
       });
 
+      resultsHTML += `</tbody></table>`;
       resultsDiv.innerHTML = resultsHTML;
     } catch (error) {
       // If the error object has a message, display that, otherwise use a default error message
       resultsDiv.textContent = error.message || "Error fetching VIN data.";
     }
+
+    const vinLink = `https://www.vindecoderfree.com/vin/${vin}`;
+    document.getElementById(
+      "linkDiv"
+    ).innerHTML = `<a href="${vinLink}" target="_blank">View full details on VinDecoderFree.com</a>`;
   });
