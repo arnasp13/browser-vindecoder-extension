@@ -1,4 +1,4 @@
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+chrome.runtime.onMessage.addListener((message) => {
   if (message.vin) {
     document.getElementById("vinInput").value = message.vin;
     // Trigger the submit button click event to fetch and display the VIN details
@@ -12,6 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
   if (vin) {
     document.getElementById("vinInput").value = decodeURIComponent(vin);
     document.getElementById("submitBtn").click();
+  }
+});
+
+// New code added here
+document.getElementById("vinInput").addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    const vin = document.getElementById("vinInput").value;
+    if (vin) {
+      document.getElementById("submitBtn").click();
+    }
   }
 });
 
