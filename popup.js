@@ -50,8 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
         url: "https://cis-automotive.p.rapidapi.com/vinDecode",
         params: { vin },
         headers: {
-          "X-RapidAPI-Key":
-            "42ce5a5983msha5832eae9e62f15p1996a9jsneba1dc8291f1",
           "X-RapidAPI-Host": "cis-automotive.p.rapidapi.com",
         },
       };
