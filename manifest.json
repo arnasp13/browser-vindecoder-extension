@@ -1,9 +1,8 @@
 {
   "manifest_version": 3,
   "name": "VIN Decoder - Free Instant Vehicle Details",
-  "version": "1.1.2",
+  "version": "1.1.5",
   "description": "VIN Decoder - Decode any Vehicle Identification Number and reveal detailed vehicle data. Instantly.",
-  "permissions": ["contextMenus"],
   "background": {
     "service_worker": "background.js"
   },
@@ -16,10 +15,5 @@
   "action": {
     "default_popup": "popup.html"
   },
-  "content_scripts": [
-    {
-      "js": ["axios.min.js"],
-      "matches": ["https://vpic.nhtsa.dot.gov/*"]
-    }
-  ]
+  "permissions": ["storage"]
 }
